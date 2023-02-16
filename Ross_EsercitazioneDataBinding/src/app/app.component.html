@@ -1,0 +1,33 @@
+<h1>{{title}}</h1>
+
+<div id="main">
+    <div class="row">
+        <div class="col-3">
+            <a href="#" #stringInterpolation class="btn btn-primary" (click)="onEsempioClick(stringInterpolation)" data-target="wrp-stringinterpolation">String Interpolation</a>
+        </div>
+        <div class="col-3">
+            <a href="#" #propertyBinding class="btn btn-light" (click)="onEsempioClick(propertyBinding)" data-target="wrp-propertybinding">Property Binding</a>
+        </div>
+        <div class="col-3">
+            <a href="#" #eventBinding class="btn btn-light" (click)="onEsempioClick(eventBinding)" data-target="wrp-eventbinding">Event Binding</a>
+        </div>
+        <div class="col-3">
+            <a href="#" #btnTwoWayBinding class="btn btn-light" (click)="onEsempioClick(btnTwoWayBinding)" data-target="wrp-twowaybinding">Two Way Binding</a>
+        </div>
+    </div>
+
+    <div class="row">
+        <div id="wrp-stringinterpolation" class="wrp col-12">
+            <app-stringinterpolation></app-stringinterpolation>
+        </div>
+        <div id="wrp-propertybinding" class="wrp col-12 hidden">
+            <app-propertybinding></app-propertybinding>
+        </div>
+        <div id="wrp-eventbinding" class="wrp col-12 hidden">
+            <app-eventbinding></app-eventbinding>
+        </div>
+        <div id="wrp-twowaybinding" class="wrp col-12 hidden">
+            <app-twowaybinding></app-twowaybinding>
+        </div>
+    </div>
+</div>    
